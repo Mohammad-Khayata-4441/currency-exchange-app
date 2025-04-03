@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "currency_exchanges",
+  "info": {
+    "singularName": "currency-exchange",
+    "pluralName": "currency-exchanges",
+    "displayName": "اسعار الصرف",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sourceCurrency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    },
+    "targetCurrency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "gap": {
+      "type": "decimal"
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

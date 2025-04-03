@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "currencies",
+  "info": {
+    "singularName": "currency",
+    "pluralName": "currencies",
+    "displayName": "العملات"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "flag": {
+      "type": "string"
+    },
+    "isMain": {
+      "type": "boolean"
+    },
+    "symbol": {
+      "type": "string"
+    }
+  }
+}
